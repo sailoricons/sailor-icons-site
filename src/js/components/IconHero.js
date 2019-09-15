@@ -57,7 +57,7 @@ class IconHero extends Component {
                 ))}
               </Box>
               <Heading level={3} margin="small">
-                SVG icons for React
+                Nice SVG icons
               </Heading>
             </Box>
           );

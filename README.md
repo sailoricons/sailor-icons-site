@@ -1,5 +1,7 @@
 # sailor-icons-site
 
+[![HitCount](http://hits.dwyl.io/sailoricons/sailor-icons-site.svg)](http://hits.dwyl.io/sailoricons/sailor-icons-site)
+
 Explore sailor icons.
 
 To run this application, execute the following commands:
