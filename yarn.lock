@@ -6544,9 +6544,9 @@ react-modal@^3.6.1:
     react-lifecycles-compat "^3.0.0"
     warning "^4.0.3"
 
-react-sailor-icons@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/react-sailor-icons/-/react-sailor-icons-1.0.0.tgz#2fafbdf1fb5db87af59462fca688048719ab0f94"
+react-sailor-icons@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-sailor-icons/-/react-sailor-icons-1.0.1.tgz#27abd1eb887800ef89e59ed2e8622b504867b555"
   dependencies:
     prop-types "^15.7.2"
 

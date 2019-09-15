@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   Anchor,
   Box,
@@ -10,13 +10,13 @@ import {
   Text,
 } from 'grommet';
 import { grommet } from 'grommet/themes';
+import * as Sailor from 'react-sailor-icons';
 
 import IconHero from './components/IconHero';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import HeaderFooter from './components/HeaderFooter';
 import Gremlin from './components/Gremlin';
-import * as Sailor from 'react-sailor-icons';
 
 const openIssueAnchor = (
   <Anchor
@@ -27,13 +27,13 @@ const openIssueAnchor = (
   </Anchor>
 );
 
-const App = (props) => {
+const App = () => {
   const sailorIcons = Object.entries(Sailor)
     .map(([name, Icon]) => {
       const obj = {
         name,
         Icon,
-        label: name
+        label: name,
       }
       return obj
     })

@@ -50,11 +50,11 @@ class IconHero extends Component {
                 wrap
                 pad={{ bottom: 'large' }}
               >
-              {icons.map((Icon, idx) => (
-                <Box margin="small">
-                  <Icon key={`${idx}_${key}`} color="#fff" className="spin" size={size} />
-                </Box>
-              ))}
+                {icons.map((Icon, idx) => (
+                  <Box margin="small">
+                    <Icon key={`${idx}_${key}`} color="#fff" className="spin" size={size} />
+                  </Box>
+                ))}
               </Box>
               <Heading level={3} margin="small">
                 SVG icons for React
