@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta charset="UTF-8">
+  <title>Sailor Icons</title>
+  <meta name="description" content="" />
+  <meta name="fragment" content="!" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" type="image/png" href="/img/shortcut-icon.png" />
+  <link rel="apple-touch-icon" sizes="196x196" type="image/png" href="/img/mobile-app-icon.png">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .spin {
+      opacity: 0;
+      animation: spin-in 0.5s 1 forwards, spin-out 0.3s 1 forwards;
+      animation-delay: 0s, 4.7s;
+    }
+
+    .fade-text {
+      opacity: 0;
+      animation: fade-in 0.5s 1 forwards, fade-out 0.3s 1 forwards;
+      animation-delay: 0.3s, 4.7s;
+    }
+
+    .fade-icon {
+      opacity: 0;
+      animation: fade-in 1s 1 forwards;
+    }
+
+    #chomp-mouth {
+      opacity: 0;
+      animation: chomp-mouth 0.5s infinite;
+      animation-delay: 0.5s;
+    }
+
+    body.loading {margin: 0px; width: 100vw; height: 100vh;
+      background-image: radial-gradient(circle at 50% 15%, #fff, #fff 30%, #ccc);
+    }
+    body.loading #content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      font-size: 0px;
+    }
+    body.loading #logo {
+      position: absolute; display: block; width: 140px; height: 140px;
+      top: calc(50vh - 70px); left: calc(50vw - 70px);
+    }
+    div.t {
+      display: inline-block;
+      box-sizing: border-box;
+      margin: 0px;
+      width: 10vw;
+      height: 10vh;
+      background-color: #e2e2e2;
+    }
+    div.t.on {
+      -webkit-animation: pulse 3s infinite linear alternate;
+      -moz-animation: pulse 3s infinite linear alternate;
+      animation: pulse 3s infinite linear alternate;
+    }
+    div.t.on:hover {
+      -webkit-animation: none;
+      background-color: #ccc;
+    }
+    @keyframes spin-in {
+      from { transform:rotateX(90deg); opacity: 0.5; }
+      to { transform:rotateX(0deg); opacity: 1;  }
+    }
+    @keyframes spin-out {
+      from { transform:rotateX(0deg); opacity: 0.5 }
+      to { transform:rotateX(90deg); opacity: 0;  }
+    }
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1;  }
+    }
+    @keyframes fade-out {
+      from { opacity: 1; }
+      to { opacity: 0;  }
+    }
+    @keyframes chomp-mouth {
+      0% {
+        opacity: 0;
+      }
+      5% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 1;
+      }
+      51% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    @keyframes pulse {
+      100% { background-color: #fff; }
+    }
+  </style>
+</head>
+<body class="loading">
+  <div id="content" tabindex="-1" style="outline: none;">
+    <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 24 24">
+      <path d="M12 4.73a.94.94 0 0 1 1 .89 1 1 0 0 1-2 0 .94.94 0 0 1 1-.89M12 4a1.7 1.7 0 0 0-1.76 1.62A1.69 1.69 0 0 0 12 7.23a1.69 1.69 0 0 0 1.77-1.61A1.7 1.7 0 0 0 12 4z" fill="#1576ea"></path>
+      <path d="M12 18.87a.75.75 0 0 1-.78-.73V7.47a.78.78 0 0 1 1.56 0v10.67a.75.75 0 0 1-.78.73z" fill="#1576ea"></path>
+      <path d="M12 20c-3.08 0-5.58-1.92-5.58-4.29a.78.78 0 0 1 1.56 0c0 1.56 1.8 2.84 4 2.84s4-1.28 4-2.84a.78.78 0 0 1 1.56 0C17.58 18.08 15.07 20 12 20z" fill="#1576ea"></path>
+      <path d="M16 9.28H8.05a.73.73 0 1 1 0-1.45H16a.73.73 0 1 1 0 1.45z" fill="#1576ea"></path>
+      <path d="M5.78 17.75h-.21a.73.73 0 0 1-.54-.9l.57-1.92a.76.76 0 0 1 .94-.51l2.28.58a.73.73 0 0 1 .56.88.78.78 0 0 1-1 .52L6.89 16l-.36 1.24a.78.78 0 0 1-.75.51z" fill="#1576ea"></path>
+      <path d="M18.22 17.75a.78.78 0 0 1-.75-.53L17.11 16l-1.54.37a.78.78 0 0 1-1-.52.73.73 0 0 1 .56-.88l2.28-.55a.76.76 0 0 1 .94.51l.65 1.9a.73.73 0 0 1-.54.9z" fill="#1576ea"></path>
+    </svg>
+    <script>
+    var c = document.getElementById("content");
+    for (var i = 0; i < 100; i += 1) {
+      c.insertAdjacentHTML('beforeend', '<div class="t off"></div>');
+    }
+    var timer = setInterval(function () {
+      var again = false;
+      if (document.body.classList.contains('loading')) {
+        var ts = c.querySelectorAll('div.t.off');
+        if (ts.length > 0) {
+          var index = Math.floor(Math.random() * ts.length);
+          ts[index].classList.remove('off');
+          ts[index].classList.add('on');
+          if (ts.length > 1) {
+            again = true;
+          }
+        }
+      }
+      if (! again) {
+        clearInterval(timer);
+      }
+    }, 100)
+    </script>
+  </div>
+  <script async src="/index.js"></script>
+</body>
+</html>
