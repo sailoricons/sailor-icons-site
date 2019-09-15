@@ -22,7 +22,7 @@ module.exports = {
   output: {
     path: path.resolve('./docs'),
     filename: 'index.js',
-    publicPath: '/',
+    publicPath: './',
   },
   resolve: {
     extensions: ['.js', '.json'],

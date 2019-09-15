@@ -1,13 +1,13 @@
 {
-  "name": "grommet-icons-site",
+  "name": "sailor-icons-site",
   "version": "0.1.0",
   "main": "src/js/index.js",
-  "description": "website for grommet icons",
-  "homepage": "https://grommet.github.io/grommet-icons-site/",
-  "bugs": "https://github.com/grommet/grommet-icons-site/issues",
+  "description": "website for sailor icons",
+  "homepage": "https://sailoricons.github.io/sailor-icons-site/",
+  "bugs": "https://github.com/sailoricons/sailor-icons-site/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/grommet/grommet-icons-site.git"
+    "url": "https://github.com/sailoricons/sailor-icons-site.git"
   },
   "license": "Apache-2.0",
   "scripts": {
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "grommet": "https://github.com/grommet/grommet/tarball/stable",
-    "grommet-icons": "https://github.com/grommet/grommet-icons/tarball/stable",
+    "grommet-icons": "4.3.0",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
