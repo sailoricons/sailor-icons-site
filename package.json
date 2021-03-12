@@ -57,7 +57,7 @@
     "fs-extra": "^7.0.0",
     "html-minifier": "^3.5.20",
     "pre-commit": "^1.2.2",
-    "react-dev-utils": "^6.0.5",
+    "react-dev-utils": "^11.0.4",
     "react-test-renderer": "^16.5.2",
     "simple-git": "^1.105.0",
     "webpack": "^4.20.2",
